@@ -2,12 +2,31 @@
 
 
 
-<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"><TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(?)" android:id="@+id/ButtonShuffle"></Button>
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="||" android:id="@+id/ButtonPause"></Button>
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;" android:id="@+id/ButtonNext"></Button>
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"><TableRow android:id="@+id/TableRow01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:baselineAligned="true">
+
+
+
+
+<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amarok_playlist_refresh" android:id="@+id/ButtonRefresh"></ImageButton><ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amarok_pause" android:id="@+id/ButtonPause"></ImageButton>
+<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amarok_next" android:id="@+id/ButtonNext"></ImageButton>
+
+<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amarok_playlist_clear" android:id="@+id/ButtonClear"></ImageButton>
+
+</TableRow><TableRow android:id="@+id/TableRow02" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+
+<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/audio_volume_low" android:id="@+id/ButtonLowerVolume"></ImageButton>
+<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonMute" android:src="@drawable/audio_volume_muted"></ImageButton>
+<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/audio_volume_high" android:id="@+id/ButtonIncreaseVolume"></ImageButton><ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonShuffle" android:src="@drawable/amarok_random"></ImageButton>
+
+
+
 </TableRow>
-<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;&lt;!" android:id="@+id/ButtonLowerVolume"></Button>
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;!&gt;" android:id="@+id/ButtonMute"></Button>
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="!&gt;&gt;" android:id="@+id/ButtonIncreaseVolume"></Button>
-</TableRow>
+
+
+
+
+<ListView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ListViewSongs">
+</ListView>
+
 </TableLayout>
