@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"><TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(?)" android:id="@+id/ButtonShuffle"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="||" android:id="@+id/ButtonPause"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;" android:id="@+id/ButtonNext"></Button>
+</TableRow>
+<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;&lt;!" android:id="@+id/ButtonLowerVolume"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;!&gt;" android:id="@+id/ButtonMute"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="!&gt;&gt;" android:id="@+id/ButtonIncreaseVolume"></Button>
+</TableRow>
+</TableLayout>
