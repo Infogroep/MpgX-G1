@@ -22,14 +22,14 @@ public final class Buttons {
 
 	public class ButtonNext implements Button.OnClickListener {
 		public void onClick(View v) {
-			HTTP_Request.post(MpgX_G1.MpgX_Server, "skip", "");
+			HTTP_Request.fast_post(MpgX_G1.MpgX_Server, "skip", "");
 			MpgX_G1.refreshPlayList();
 		}
 	}
 
 	public class ButtonClear implements Button.OnClickListener {
 		public void onClick(View v) {
-			HTTP_Request.post(MpgX_G1.MpgX_Server, "flush");
+			HTTP_Request.fast_post(MpgX_G1.MpgX_Server, "flush");
 			MpgX_G1.refreshPlayList();
 		}
 	}
@@ -60,7 +60,7 @@ public final class Buttons {
 
 	public class ButtonShuffle implements Button.OnClickListener {
 		public void onClick(View v) {
-			HTTP_Request.post(MpgX_G1.MpgX_Server, "shuffle", "");
+			HTTP_Request.fast_post(MpgX_G1.MpgX_Server, "shuffle", "");
 			MpgX_G1.refreshPlayList();
 		}
 	}

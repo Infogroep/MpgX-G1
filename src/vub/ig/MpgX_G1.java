@@ -120,8 +120,8 @@ public class MpgX_G1 extends Activity {
 
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View view, ContextMenuInfo menuInfo) {
-		menu.add(0, MpgX_LISTVIEW_CONTEXT_DEQUEUE, 0, "Dequeue");
-		menu.add(0, MpgX_LISTVIEW_CONTEXT_MAGICSHUFFLE, 1, "Magic shuffle");
+		menu.add(0, MpgX_LISTVIEW_CONTEXT_MAGICSHUFFLE, 0, "Magic shuffle");
+		menu.add(0, MpgX_LISTVIEW_CONTEXT_DEQUEUE, 1, "Dequeue");
 	}
 
 	public boolean onContextItemSelected(MenuItem item) {
