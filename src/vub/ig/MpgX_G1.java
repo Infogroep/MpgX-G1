@@ -106,6 +106,10 @@ public class MpgX_G1 extends Activity {
 		tmpImgButton.setOnClickListener(new Buttons().ButtonIncreaseVolume());
 		tmpImgButton = (ImageButton)this.findViewById(R.id.ButtonShuffle);
 		tmpImgButton.setOnClickListener(new Buttons().ButtonShuffle());
+		tmpImgButton = (ImageButton)this.findViewById(R.id.ButtonEen);
+		tmpImgButton.setOnClickListener(new Buttons().ButtonQueueEen());
+		tmpImgButton = (ImageButton)this.findViewById(R.id.ButtonTwee);
+		tmpImgButton.setOnClickListener(new Buttons().ButtonQueueTwee());
 		MpgX_ListView.addHeaderView(MpgX_TextSentinel);
 		MpgX_SongListAdapter = MpgX_bindListViewToAdapter(this, MpgX_ListView);
 		registerForContextMenu(MpgX_ListView);

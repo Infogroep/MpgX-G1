@@ -17,9 +17,6 @@ import org.apache.http.params.HttpParams;
 
 public abstract class HTTP_Request {
 
-	
-	private static final HttpClient httpclient = new DefaultHttpClient();
-
 	// GET - With Return Value
 	public static String get(String server, String command) {
 		return get(server, command, "", "");
@@ -29,6 +26,7 @@ public abstract class HTTP_Request {
 	}
 	public static String get(String server, String command, String opt1, String opt2) {
 		try {
+			HttpClient httpclient = new DefaultHttpClient();
 			HttpGet httpget = new HttpGet(server + "/" + command + "/" + opt1 + "/" + opt2);
 			HttpResponse httpResponse = httpclient.execute(httpget);
 			return _getText((InputStream) httpResponse);
@@ -96,6 +94,7 @@ public abstract class HTTP_Request {
 	}
 	public static String post(String server, String command, String body) {
 		try {
+			HttpClient httpclient = new DefaultHttpClient();
 			HttpPost httppost = new HttpPost(server + "/" + command);
 			httppost.setEntity(new StringEntity(body));
 			HttpResponse httpResponse = httpclient.execute(httppost);

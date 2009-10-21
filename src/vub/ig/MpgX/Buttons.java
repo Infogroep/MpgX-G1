@@ -64,6 +64,20 @@ public final class Buttons {
 			MpgX_G1.refreshPlayList();
 		}
 	}
+
+	public class ButtonQueueEen implements Button.OnClickListener {
+		public void onClick(View v) {
+			HTTP_Request.fast_post(MpgX_G1.MpgX_Server, "queue_tv", "een");
+			MpgX_G1.refreshPlayList();
+		}
+	}
+
+	public class ButtonQueueTwee implements Button.OnClickListener {
+		public void onClick(View v) {
+			HTTP_Request.fast_post(MpgX_G1.MpgX_Server, "queue_tv", "twee");
+			MpgX_G1.refreshPlayList();
+		}
+	}
 	
 	public OnClickListener ButtonRefresh() {
 		return new ButtonRefresh();
@@ -91,6 +105,14 @@ public final class Buttons {
 
 	public OnClickListener ButtonIncreaseVolume() {
 		return new ButtonIncreaseVolume();
+	}
+
+	public OnClickListener ButtonQueueEen() {
+		return new ButtonQueueEen();
+	}
+
+	public OnClickListener ButtonQueueTwee() {
+		return new ButtonQueueTwee();
 	}
 
 	public OnClickListener ButtonShuffle() {

@@ -110,7 +110,7 @@ public class SongListAdapter extends BaseAdapter {
 		notifyDataSetChanged();
 	}
 
-	@Override public View getView(int index, View cellRenderer, ViewGroup parent) {
+	public View getView(int index, View cellRenderer, ViewGroup parent) {
 		CellRendererView cellRendererView = null;
 		if (cellRenderer == null) {
 			// create the cell renderer
@@ -209,7 +209,6 @@ public class SongListAdapter extends BaseAdapter {
 	
 	@SuppressWarnings("unchecked")
 	private class SongComparator implements Comparator {
-		@Override
 		public int compare(Object object1, Object object2) {
 			Integer i = Integer.parseInt((String) object1);
 			return i.compareTo(Integer.parseInt((String) object2));
