@@ -1,0 +1,105 @@
+
+                ********************************
+                *                              *
+                *           MpgX-G1            *
+                *                              *
+                *         Version 1.0          *
+                *                              *
+                *     Made by Lode Hoste       *
+                *                              *
+                ********************************
+
+
+This package containts:
+	- MpgX-G1: MpgX application which supports queuing and displaying the playlist
+
+                             -----
+
+The program is free software and is copyrighted under the GNU General Public License. It comes with absolutely no warranty. See the file COPYING for details.
+
+Written by Lode Hoste
+Email: zillode@zillode.be
+
+For news and updates have a look at my homepage:
+	http://www.zillode.be
+
+
+
+Table of contents
+=%=%=%=%=%=%=%=%=
+
+  1.   Requirements
+
+  2.   Features
+
+  3.   Installing
+
+  4.   Bug reports
+
+  5.   Credits
+
+  6.   License
+
+
+
+1. Requirements
+=%=%=%=%=%=%=%=
+
+ - Android 1.5 or higher
+
+
+2. Features
+=%=%=%=%=%=
+
+ - Watch the playlist of MpgX
+ - Queue TV
+ - Pause/Stop/Skip/... control of the music player using your Android phone
+
+
+
+3. Installing
+=%=%=%=%=%=%=
+
+ - adb install MpgX-G1.apk
+
+
+4. Bug reports
+=%=%=%=%=%=%=%
+
+Please send bug reports to: zillode@zillode.be
+
+If you make any changes to the source, please mail me the 'diff -u' of the file(s) changed, and also why were the changes needed.
+
+
+
+5. Credits
+=%=%=%=%=%
+
+The project is implemented by Lode Hoste.
+You can checkout my homepage for more info about this project.
+Homepage: http://www.zillode.be
+Email: zillode@zillode.be
+
+
+
+6. License
+=%=%=%=%=%
+
+MpgX-G1
+Copyright (C) 2009 Hoste Lode
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Contact: Hoste Lode; http://www.zillode.be; zillode@zillode.be
+
